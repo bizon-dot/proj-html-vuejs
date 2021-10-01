@@ -1,17 +1,23 @@
 <template>
-  <div id="app">
+  <div id="app" >
    
     <Header/>
+    <!-- <Hero /> -->
+    <ServiceCoaching />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from './components/Header.vue';
+// import Hero from './components/Hero.vue';
+import ServiceCoaching from './components/ServiceCoaching.vue';
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+ /*    Hero, */
+    ServiceCoaching
   }
 }
 </script>

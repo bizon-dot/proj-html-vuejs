@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header cclass="container">
     <div class="header-top">
       <label class="msg-timer">
         Starts TOMORROW! Our biggest event of the year

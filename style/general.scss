@@ -1,6 +1,8 @@
 @import './var.scss';
 @import './mixin.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
 
 //Reset 
 
@@ -10,6 +12,14 @@
     box-sizing: border-box;
 }
 
+.container {
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  //margin: 0 auto;
+
+}
 .button {
   border: none;
   color: white;
@@ -27,4 +37,9 @@
     background-color: #ef6f31;
     color: white;
     font-weight: 800;
+}
+
+.handwriting{
+  font-family: 'Yellowtail', cursive;
+  color:$cerulean; 
 }
