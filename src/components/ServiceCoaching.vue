@@ -95,19 +95,33 @@
 
   }
 
+  .service-bottom:first-child{
+    display:none;
+
+  }
   .service-bottom {
     padding: em(40);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("../assets/img/maxcoach-shape-14-1024x229.png");
+  
+    
+
+    
 
     .card{
       margin-left: em(5);
+      background-image: url("../assets/img/artist-shape-01-300x288.png");
     }
 
     .alt-card{
       width: em(300);
     }
 
+  }
+
+  .bg{
+      background-image: url("../assets/img/artist-shape-01.png");
   }
 </style>
