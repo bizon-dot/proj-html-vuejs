@@ -31,7 +31,7 @@
         </div>
         <div class="alt-card">
           <h3>One to One</h3>
-          <span> Getting the necessary larity about the 
+          <span> Getting the necessary larity about the
             current state to help you improve your ability. </span>
 
         </div>
@@ -44,7 +44,7 @@
         </div>
         <div class="alt-card">
           <h3>Anywhere</h3>
-          <span> Access to valuable and portable program 
+          <span> Access to valuable and portable program
             which allow you to setup and live anywhere you want </span>
 
         </div>
@@ -62,8 +62,8 @@
         </div>
 
       </div>
-
     </div>
+    <img src="../assets/img/maxcoach-shape-13.png" class="image-shape">
 
   </div>
 </template>
@@ -79,6 +79,17 @@
 <style scoped lang="scss">
   @import "./style/general.scss";
 
+  .service {
+    position: relative;
+  }
+
+  .image-shape {
+    position: absolute;
+    right: 0;
+    top: em(200);
+
+  }
+
   .service-top {
     display: flex;
     flex-direction: column;
@@ -89,42 +100,34 @@
       font-size: 3rem;
 
     }
-    *{
-      padding:em(5);
+
+    * {
+      padding: em(5);
     }
 
   }
 
-  /* .service-bottom > *:first-child{
-    display:none;
-
-  } */
   .service-bottom {
     padding: em(40);
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url("../assets/img/maxcoach-shape-14-1024x229.png");
-  
-    > *:first-child,
-    > *:last-child{
-    background-image: url("../assets/img/artist-shape-01-300x288.png");
 
-  }
-  
-    
+    >*:first-child,
+    >*:last-child {
+      background-image: url("../assets/img/artist-shape-01-300x288.png");
 
-    
-
-    .card{
-      margin-left: em(5);
-      
     }
 
-    .alt-card{
+    .card {
+      margin-left: em(5);
+
+    }
+
+    .alt-card {
       width: em(300);
     }
 
   }
-
 </style>
