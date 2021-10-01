@@ -7,19 +7,17 @@
 //Reset 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container {
-
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  //margin: 0 auto;
-
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
 }
+
 .button {
   border: none;
   color: white;
@@ -33,13 +31,13 @@
   border-radius: 5px;
 }
 
-.bg-orange{
-    background-color: #ef6f31;
-    color: white;
-    font-weight: 800;
+.bg-orange {
+  background-color: #ef6f31;
+  color: white;
+  font-weight: 800;
 }
 
-.handwriting{
+.handwriting {
   font-family: 'Yellowtail', cursive;
-  color:$cerulean; 
+  color: $cerulean;
 }
