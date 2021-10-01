@@ -1,4 +1,6 @@
 @import './var.scss';
+@import './mixin.scss';
+
 
 //Reset 
 
@@ -6,4 +8,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.button {
+  border: none;
+  color: white;
+  height: 30px;
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  //line-height: 4em;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.bg-orange{
+    background-color: #ef6f31;
+    color: white;
+    font-weight: 800;
 }
