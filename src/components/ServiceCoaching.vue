@@ -95,10 +95,10 @@
 
   }
 
-  .service-bottom:first-child{
+  /* .service-bottom > *:first-child{
     display:none;
 
-  }
+  } */
   .service-bottom {
     padding: em(40);
     display: flex;
@@ -106,13 +106,19 @@
     align-items: center;
     background-image: url("../assets/img/maxcoach-shape-14-1024x229.png");
   
+    > *:first-child,
+    > *:last-child{
+    background-image: url("../assets/img/artist-shape-01-300x288.png");
+
+  }
+  
     
 
     
 
     .card{
       margin-left: em(5);
-      background-image: url("../assets/img/artist-shape-01-300x288.png");
+      
     }
 
     .alt-card{
@@ -121,7 +127,4 @@
 
   }
 
-  .bg{
-      background-image: url("../assets/img/artist-shape-01.png");
-  }
 </style>
