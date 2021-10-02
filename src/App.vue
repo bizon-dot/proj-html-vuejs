@@ -5,6 +5,9 @@
     <!-- <Hero /> -->
     <ServiceCoaching />
     <CallToActions />
+
+
+     <Footer />
   </div>
 </template>
 
@@ -13,6 +16,8 @@ import Header from './components/Header.vue';
 // import Hero from './components/Hero.vue';
 import ServiceCoaching from './components/ServiceCoaching.vue';
 import CallToActions from './components/CallToActions.vue';
+import Footer from './components/Footer.vue';
+
 
 export default {
   name: 'App',
@@ -20,7 +25,8 @@ export default {
     Header,
  /*    Hero, */
     ServiceCoaching,
-    CallToActions
+    CallToActions,
+    Footer
   }
 }
 </script>
