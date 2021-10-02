@@ -37,7 +37,24 @@
   font-weight: 800;
 }
 
+.bg-light-orange {
+  background-color: #fdf0ea  ;
+  color: #ef6f31;;
+  font-weight: 800;
+  width: 30%;
+  height: 30%;
+}
+
 .handwriting {
   font-family: 'Yellowtail', cursive;
   color: $cerulean;
+}
+
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.p-4{
+  padding: em(3);
 }

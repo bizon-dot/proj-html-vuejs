@@ -1,6 +1,6 @@
 <template>
-  <div class="call-to-action clearfix">
-    <div class="col clearfix">
+  <div class="row">
+    <div class="col">
       <img src="../assets/img/artist-quote-icon.png">
       <div class="title">
         <h1>I coach and mentor
@@ -15,18 +15,19 @@
       </div>
 
     </div>
-    <div class="col clearfix">
-      <span>
+    <div class="col">
+      <p class="justify p-4">
         As a coach and mentor, my ultimate goal id yo motivate visual artists
         toward inspired action. I help you get you back on track to being the
         productive, creative, meaningful and authentic artist you truly want
         to be. I support artist in crafting and living a creative life as weel as
         feeling good about themselves and their art
-      </span>
-      <span>
+      </p>
+      <p class="justify p-4">
         As an artist and an educator for nearly 30 years, I undestand what it
-        takes to create,
-      </span>
+        takes to create.
+      </p>
+      <button class="button bg-light-orange">Get ticket</button>
 
     </div>
 
@@ -36,7 +37,6 @@
 <script>
   export default {
     name: 'CallToAction',
-
   }
 </script>
 
@@ -44,40 +44,31 @@
 <style scoped lang="scss">
   @import "./style/general.scss";
 
-  /*   .col-left{
-      float: left;
-       .handwriting{
-        font-size:2rem
-    }
-    }
-    .col.right{
-      float: left;
-      margin: 0 auto;
-      
-    } */
+  .row {
+    display: flex;
+
+    width: 80%;
+    margin: 0 auto;
+
+   
+  }
 
   .col {
-    float: left;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    > *{
-      padding: em(10);
+    flex: 50%;
+    text-align: center;
+    padding: 30px;
+
+
+    .title {
+      padding: 20px;
     }
-  }
 
-  .col > span {
-    width:50%;
-  }
+    .justify{
+      margin-bottom: em(15);
+    }
 
+    
 
-
-
-
-  .title {
-    margin-top: em(30);
-    width: 50%;
+    
   }
 </style>
