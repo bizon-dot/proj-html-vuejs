@@ -4,6 +4,8 @@
     <Header/>
     <!-- <Hero /> -->
     <ServiceCoaching />
+    <Testimonials />
+    <Courses />
     <CallToActions />
 
 
@@ -16,6 +18,10 @@ import Header from './components/Header.vue';
 // import Hero from './components/Hero.vue';
 import ServiceCoaching from './components/ServiceCoaching.vue';
 import CallToActions from './components/CallToActions.vue';
+import Testimonials from './components/Testimonials.vue';
+
+import Courses from './components/Courses.vue';
+
 import Footer from './components/Footer.vue';
 
 
@@ -26,6 +32,8 @@ export default {
  /*    Hero, */
     ServiceCoaching,
     CallToActions,
+    Testimonials,
+    Courses,
     Footer
   }
 }
@@ -35,6 +43,10 @@ export default {
   @import "./style/general.scss";
 
 #app {
+
+  
+  
+  
   
 }
 </style>

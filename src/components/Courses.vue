@@ -7,37 +7,35 @@
       <h1>
         Latest Online Course
       </h1>
+    </div>
       <div class="container-cards">
         <ul class="cards">
           <li v-for="(course,index) in courses" :key="index">
-            <img class="img-fluid mb-3" :src="require(`@/${course.path}`)" :alt="course.title">
-            <p class="price">{{course.price}} $</p>
-            <p class="title">{{course.title}} $</p>
-            <div class="info">
-             <span>   <i class="far fa-calendar"></i> {{course.nLessons}} Lessons</span>
-             <span> <i class="far fa-user"></i> {{course.students}} Students </span>
-            </div>
+            <div class="card">
+              <img class="img-fluid mb-3" :src="require(`@/${course.path}`)" :alt="course.title">
+              <p class="price">{{course.price}}.00 $</p>
+              <p class="title">{{course.title}} </p>
+              <div class="info">
+                <span> <i class="far fa-calendar"></i> {{course.nLessons}} Lessons</span>
+                <span> <i class="far fa-user"></i> {{course.students}} Students </span>
+              </div>
 
+            </div>
           </li>
 
         </ul>
 
       </div>
     </div>
-
-
-  </div>
 </template>
 
 <script>
   import courses from "../assets/data/data-courses.js";
-  import Card from './Card.vue';
+
 
   export default {
     name: 'Courses',
-    componets: {
-      Card
-    },
+    
     data() {
       return {
         courses: courses,
@@ -55,13 +53,39 @@
   .courses {
     width: 80%;
     margin: 0 auto;
+    .card{
+      > *{
+     padding:20px;
+    }
 
+    .price{
+      color:#ef6f31;
+      font-weight: 800;
+      font-size:1rem;
+    }
+    .title{
+      font-size: 1.5rem;
+      font-weight: bolder;
+      text-transform: capitalize ;
+    }
+    }
+
+   
     .cards {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+     
+
+      .info {
+        color:gray;
+        span {
+          padding: em(5);
+        }
+      }
+
       li {
         list-style: none;
         flex-basis: 25%;

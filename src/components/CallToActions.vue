@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="container row">
     <div class="col">
       <img src="../assets/img/artist-quote-icon.png">
       <div class="title">
@@ -46,9 +46,9 @@
 
   .row {
     display: flex;
-
     width: 80%;
     margin: 0 auto;
+    margin-bottom: em(40);
 
    
   }

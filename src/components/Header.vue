@@ -57,6 +57,10 @@
 <style scoped lang="scss">
   @import "./style/general.scss";
 
+  header{
+    margin-bottom: em(20);
+  }
+
   .header-top {
     min-height: 4em;
     line-height: 4em;

@@ -37,7 +37,7 @@
     </div>
 
     <div class="social">
-      <div class="header">
+      <div class="headerr">
         <h2>Instagram</h2><label>@maxcoach</label>
       </div>
 
@@ -86,6 +86,11 @@
     margin: 0 auto;
     color: $dusty-gray;
     font-weight: 400;
+    .info > *{
+      padding: em(10);
+    }
+    .socialItems,
+    .container-photos, 
     .items{
       list-style: none;
        li {
@@ -96,18 +101,11 @@
     
     .socialItems,
     .container-photos {
-      list-style: none;
       display: flex;
-
-
-      li {
-        padding: em(10);
-
-      }
     }
 
     .social {
-      .header {
+      .headerr {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -122,8 +120,8 @@
     .container-photos {
 
       img {
-        height: 150px;
-        width: 150px;
+        height: em(150);
+        width: em(150);
         object-fit: cover;
       }
     }
