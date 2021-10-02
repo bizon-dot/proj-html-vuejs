@@ -26,7 +26,7 @@
     </div>
 
     <div class="linksInformation">
-     
+
       <h2>Information</h2>
       <ul class="items">
         <li v-for="(link,index) in linksInformation" :key="index">
@@ -37,14 +37,16 @@
     </div>
 
     <div class="social">
-      <h2>Instagram</h2>
-     
+      <div class="header">
+        <h2>Instagram</h2><label>@maxcoach</label>
+      </div>
+
       <div class="container-photos">
         <li v-for="(photo,index) in photosInstagram" :key="index">
           <img :src="require(`@/${photo.path}`)" :alt="photo.text" />
         </li>
       </div>
-      
+
 
     </div>
 
@@ -75,36 +77,59 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "./style/general.scss";
+  @import "./style/general.scss";
+
   .footer-top {
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
+    color: $dusty-gray;
+    font-weight: 400;
+    .items{
+      list-style: none;
+       li {
+        padding: em(10);
 
-     .socialItems,
-     .container-photos {
-    list-style: none;
-    display: flex;
-    
-    
-    li {
-      padding:em(10);
-      
-    }
-  }
-
-  .container-photos{
-    
-      img{
-      height: 150px;
-      width: 150px;
-      object-fit: cover;  
       }
     }
+    
+    .socialItems,
+    .container-photos {
+      list-style: none;
+      display: flex;
+
+
+      li {
+        padding: em(10);
+
+      }
+    }
+
+    .social {
+      .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        label{
+          margin-left: em(5);
+          color: #ef6f31;
+        }
+        
+      }
+    }
+
+    .container-photos {
+
+      img {
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+      }
+    }
+
+    h2{
+      color:black;
+    }
   }
-
-  
-
- 
 </style>
