@@ -2,11 +2,11 @@
 
   <div class="service container">
 
-    <div class="service-top">
+    <div class="header">
       <p class="handwriting">Artist coaching </p>
       <h1>
         I undestand what it takes to create.
-      </h1> <br>
+      </h1> 
       <h1>
         I can help you with
       </h1>
@@ -81,6 +81,7 @@
 
   .service {
     position: relative;
+    
   }
 
   .image-shape {
@@ -91,16 +92,7 @@
   }
 
   .service-top {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .handwriting {
-      font-size: 3rem;
-
-    }
-
+   
     * {
       padding: em(5);
     }
