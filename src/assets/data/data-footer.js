@@ -52,7 +52,23 @@ const info =
         timetable: "(9am - 5pm EST, Monday-Friday)"
     }
 
+const photosInstagram = 
+    [
+        {
+            text: 'instagram',
+            path: 'assets/img/artist-event-01-250x300.jpg'
+        },
+        {
+            text: 'instagram',
+            path: 'assets/img/artist-event-02-250x300.jpg'
+        },
+        {
+            text: 'instagram',
+            path: 'assets/img/artist-event-03-250x300.jpg'
+        },
+    ]
 
- export {linksExplore, linksInformation, info};
+
+ export {linksExplore, linksInformation, info, photosInstagram};
 
     

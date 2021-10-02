@@ -26,6 +26,7 @@
     </div>
 
     <div class="linksInformation">
+     
       <h2>Information</h2>
       <ul class="items">
         <li v-for="(link,index) in linksInformation" :key="index">
@@ -37,6 +38,13 @@
 
     <div class="social">
       <h2>Instagram</h2>
+     
+      <div class="container-photos">
+        <li v-for="(photo,index) in photosInstagram" :key="index">
+          <img :src="require(`@/${photo.path}`)" :alt="photo.text" />
+        </li>
+      </div>
+      
 
     </div>
 
@@ -45,8 +53,7 @@
 
 <script>
   import * as data from "../assets/data/data-footer.js";
-  import socialIcons from "../assets/data/social-icons.js"
-
+  import socialIcons from "../assets/data/social-icons.js";
   export default {
     name: 'Footer',
 
@@ -56,6 +63,7 @@
         linksInformation: data.linksInformation,
         info: data.info,
         socialIcons: socialIcons,
+        photosInstagram: data.photosInstagram,
       }
 
     },
@@ -67,23 +75,36 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "./style/general.scss";
   .footer-top {
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
 
-     .socialItems {
+     .socialItems,
+     .container-photos {
     list-style: none;
     display: flex;
-    //justify-content: space-between;
-
+    
+    
     li {
-      padding:5px;
+      padding:em(10);
+      
     }
   }
 
+  .container-photos{
+    
+      img{
+      height: 150px;
+      width: 150px;
+      object-fit: cover;  
+      }
+    }
   }
+
+  
 
  
 </style>
