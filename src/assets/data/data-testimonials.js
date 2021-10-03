@@ -8,7 +8,7 @@ const testimonials = [
     },
     {
         title: "Hight level of efficiency and scientific teaching methods",
-        text: "i am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from syllabus. Great study portal for people like me.",
+        text: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from syllabus. Great study portal for people like me.",
         author: "Mina Hollace",
         job: "Freelancer",
         path: "assets/img/artist-testimonial-avatar-02.jpg", 

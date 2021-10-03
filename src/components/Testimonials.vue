@@ -12,26 +12,29 @@
       <ul class="cards">
         <li v-for="(testimonial,index) in testimonials" :key="index">
           <div class="card">
-            <p class="title">{{testimonial.title}} </p>
-            <p class="text">{{testimonial.text}} </p>
+            <p class="title">
+              {{testimonial.title}}
+            </p>
+            <p class="text">
+              {{testimonial.text}}
+            </p>
             <div class="box-author">
-              <img class="img-fluid mb-3" :src="require(`@/${testimonial.path}`)" :alt="testimonial.author">
-              <p class="author">{{testimonial.author}} </p>
-              <p class="job">{{testimonial.job}} </p>
+              <div class="box-img">
+                <img class="img-fluid mb-3" :src="require(`@/${testimonial.path}`)" :alt="testimonial.author">
+              </div>
+              <div class="box-info">
+                <p class="author">
+                  {{testimonial.author}}
+                </p>
+                <p class="job">
+                  {{testimonial.job}}
+                </p>
+              </div>
             </div>
-
-
-            <!--  <img class="img-fluid mb-3" :src="require(`@/${course.path}`)" :alt="course.title">
-              <p class="price">{{course.price}}.00 $</p>
-              <p class="title">{{course.title}} </p> -->
-            <!-- {{testimonial}} -->
           </div>
         </li>
-
       </ul>
-
     </div>
-
   </div>
 </template>
 
@@ -52,24 +55,73 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  @import "./style/general.scss";
+
   .testimonials {
-     width: 80%;
+    width: 80%;
     margin: 0 auto;
+
     .cards {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      margin: 20px 20px;
 
-      li{
+      .card {
+        min-height: 300px;
+        width: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        margin: 5px;
+        padding: 10px;
+        background-color: whitesmoke;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .title {
+        font-size: 1rem;
+        font-weight: bolder;
+        padding: 2em;
+      }
+
+      .text {
+        color: $silver;
+      }
+
+      li {
         list-style: none;
       }
-    }
 
-    .card {
-      background-color: whitesmoke;
-    }
+      .box-author {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
 
-    // background-image: url("/assets/image/artist-shape-01-600x577.png");
+        .box-img {
+          margin-right: 15px;
+
+          img {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+          }
+        }
+
+        .box-info{
+          .author,
+          .job{
+            text-transform: capitalize;
+          }
+        }
+
+
+      }
+
+
+    }
   }
 </style>
