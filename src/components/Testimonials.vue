@@ -35,6 +35,12 @@
         </li>
       </ul>
     </div>
+    <div class="box-dots">
+      <i class="fas fa-circle"></i>
+      <i class="fas fa-circle"></i>
+      <i class="fas fa-circle"></i>
+
+    </div>
   </div>
 </template>
 
@@ -80,6 +86,13 @@
 
       .card:hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+        .text,
+        .title,
+        .author,
+        .job {
+          color: black;
+        }
       }
 
       .title {
@@ -88,7 +101,10 @@
         padding: 2em;
       }
 
-      .text {
+      .text,
+      .title,
+      .author,
+      .job {
         color: $silver;
       }
 
@@ -111,15 +127,29 @@
           }
         }
 
-        .box-info{
+        .box-info {
+
           .author,
-          .job{
+          .job {
             text-transform: capitalize;
           }
         }
 
 
       }
+
+
+
+    }
+
+    .box-dots {
+      display: flex;
+      justify-content: center;
+
+      *> {
+        display: none;
+      }
+
 
 
     }
