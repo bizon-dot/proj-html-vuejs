@@ -46,8 +46,6 @@
 
   .row {
     display: flex;
-    width: 80%;
-    margin: 0 auto;
     margin-bottom: em(40);
 
    

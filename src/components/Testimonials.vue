@@ -27,7 +27,7 @@
                   {{testimonial.author}}
                 </p>
                 <p class="job">
-                  {{testimonial.job}}
+                 / {{testimonial.job}}
                 </p>
               </div>
             </div>
@@ -37,8 +37,11 @@
     </div>
     <div class="box-dots">
       <i class="fas fa-circle"></i>
+      &nbsp;
       <i class="fas fa-circle"></i>
+      &nbsp;
       <i class="fas fa-circle"></i>
+      &nbsp;
 
     </div>
   </div>
@@ -72,6 +75,7 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      
       margin: 20px 20px;
 
       .card {
@@ -128,18 +132,12 @@
         }
 
         .box-info {
-
           .author,
           .job {
             text-transform: capitalize;
           }
         }
-
-
       }
-
-
-
     }
 
     .box-dots {
