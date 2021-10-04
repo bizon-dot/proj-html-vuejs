@@ -36,21 +36,24 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  @import "./style/general.scss";
-  .photo-right{
-    height: 64%;
-    width: auto;
-  }
-
+@import "./style/general.scss";
 .row{
    display: flex;
    flex-direction: row;
-   //justify-content: flex-start;
-   
+   justify-content: space-between;
    .col{
+      background-color: $dark-vibrant;
      line-height: 153px;  
+     max-height: 153px;
+     width: 100%;
      text-align: center;
      flex: 25%;
+
+     img{
+       width:100%;
+       height: 100%;
+       object-fit: cover;
+     }
 
      .title{
        color: white;
@@ -72,9 +75,5 @@ export default {
    }
 }
 
-.contact{
-  background-color: $dark-vibrant;
-  max-height: 153px;
-}
 
 </style>
