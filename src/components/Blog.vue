@@ -1,5 +1,6 @@
 <template>
-  <div class="container blog">
+<div class="blog">
+  <div class="container ">
     <div class="header">
       <div class="handwriting">
         Articles and tips
@@ -55,7 +56,7 @@
 
 
   </div>
-
+</div>
 </template>
 
 <script>
@@ -76,6 +77,10 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   @import "./style/general.scss";
+
+  .blog{
+    background-image: url("../assets/img/maxcoach-shape-14-1536x343.png");
+  }
 
   .cards {
     display: flex;
@@ -176,6 +181,7 @@
     a{
       color:#ef6f31;
       margin-left:10px;
+      text-decoration: underline;
     }
   }
 </style>
