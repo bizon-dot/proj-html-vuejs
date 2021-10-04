@@ -1,5 +1,13 @@
 <template>
   <div class="container testimonials">
+    <div class="video">
+            <img class="z-999" src="../assets/img/artist-video-poster.jpg">
+            <img class="centered z-999" src="../assets/img/icon-youtube-play.png">
+            <img class="bottom-right" src="../assets/img/maxcoach-shape-12-150x150.png">
+            <img class="top-left" src="../assets/img/maxcoach-shape-05-150x150.png">
+    </div>
+
+    <div class="feedbacks">
     <div class="header">
       <div class="handwriting">
         Testimonials
@@ -37,13 +45,11 @@
     </div>
     <div class="box-dots">
       <i class="fas fa-circle"></i>
-      &nbsp;
       <i class="fas fa-circle"></i>
-      &nbsp;
       <i class="fas fa-circle"></i>
-      &nbsp;
 
     </div>
+  </div>
   </div>
 </template>
 
@@ -66,17 +72,28 @@
 <style scoped lang="scss">
   @import "./style/general.scss";
 
-  .testimonials {
-    width: 80%;
-    margin: 0 auto;
+  .video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
 
+  
+
+  }
+
+  
+
+  .testimonials {
+       background-image: url("../assets/img/artist-shape-01-600x577.png");
+       
+    
     .cards {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      
-      margin: 20px 20px;
+      margin: em(20) em(20);
 
       .card {
         min-height: 300px;
@@ -140,16 +157,20 @@
       }
     }
 
+    // first-of-type first-of-child non riesco a colorare il primo pallino
+
     .box-dots {
       display: flex;
       justify-content: center;
-
-      *> {
-        display: none;
+      color:gray;
+      
+      *{
+        margin-left: em(30);
+       
       }
-
-
-
     }
+
+  
+    
   }
 </style>
