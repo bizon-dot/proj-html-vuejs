@@ -1,4 +1,5 @@
 <template>
+<div class="footer">
   <div class="footer-top">
     <div class="info">
       <h2>Address</h2>
@@ -8,7 +9,8 @@
 
       <ul class="socialItems">
         <li v-for="(icon,index) in socialIcons" :key="index">
-          <img :src="require(`@/${icon.path}`)" :alt="icon.text" />
+          <!-- <img :src="require(`@/${icon.path}`)" :alt="icon.text" /> -->
+          <i :class="icon.ico"></i>
         </li>
       </ul>
 
@@ -37,7 +39,7 @@
     </div>
 
     <div class="social">
-      <div class="headerr">
+      <div class="header-social">
         <h2>Instagram</h2><label>@maxcoach</label>
       </div>
 
@@ -50,7 +52,15 @@
 
     </div>
 
+
   </div>
+
+
+     <div class="footer-bottom">
+       <i class="far fa-copyright"></i> {{currentYear}} Maxcoach. All Right Reserved
+  </div>
+</div>
+ 
 </template>
 
 <script>
@@ -66,9 +76,16 @@
         info: data.info,
         socialIcons: socialIcons,
         photosInstagram: data.photosInstagram,
+        currentYear : "",
       }
 
     },
+
+    created: function () {
+       return this.currentYear = new Date().getFullYear();
+    }
+
+    
 
 
 
@@ -79,12 +96,14 @@
 <style scoped lang="scss">
   @import "./style/general.scss";
 
+  .footer{
+    color: $dusty-gray;
+  }
+
   .footer-top {
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-    color: $dusty-gray;
+
     font-weight: 400;
     .info > *{
       padding: em(10);
@@ -98,6 +117,13 @@
 
       }
     }
+
+    .socialItems{
+      font-size: 20px;
+      :hover{
+        color:black;
+      }
+    }
     
     .socialItems,
     .container-photos {
@@ -105,7 +131,7 @@
     }
 
     .social {
-      .headerr {
+      .header-social {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -129,5 +155,14 @@
     h2{
       color:black;
     }
+
+    
   }
+
+  .footer-bottom{
+      display:flex;
+      align-items: center;
+      justify-content: center;      
+      
+    }
 </style>
