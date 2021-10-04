@@ -6,6 +6,7 @@
     <ServiceCoaching />
     <Testimonials />
     <Courses />
+    <Events /> 
     <Blog />
     <CallToActions />
 
@@ -22,6 +23,9 @@ import CallToActions from './components/CallToActions.vue';
 import Testimonials from './components/Testimonials.vue';
 import Courses from './components/Courses.vue';
 import Blog from './components/Blog.vue';
+
+import Events from './components/Events.vue';
+
 import Footer from './components/Footer.vue';
 
 
@@ -35,6 +39,7 @@ export default {
     Testimonials,
     Courses,
     Blog,
+    Events,
     Footer
   }
 }
