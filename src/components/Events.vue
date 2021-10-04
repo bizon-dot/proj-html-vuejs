@@ -11,14 +11,15 @@
      <div class="container-cards">
         <ul class="cards">
           <li v-for="(event,index) in events" :key="index">
-            <div class="row">
+            <!-- <div v-bind:class="{ active: isActive }"></div> -->
+            <div class="row" :class="(index > 1) ? 'margin' : 'null' " >
               <div class="col img">
                    <img class="img-fluid mb-3" :src="require(`@/${event.path}`)" :alt="event.title">
               </div>
                <div class="col">
-                 <p> {{event.date}} </p>
-                 <p> {{event.title}} </p>
-                 <p> {{event.location}} </p>
+                 <p class="date"> {{event.date}} </p>
+                 <p class="title"> {{event.title}} </p>
+                 <p class="location"><i class="fas fa-map-marker-alt"></i> {{event.location}} </p>
               </div>
               
            
@@ -48,6 +49,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+ @import "./style/general.scss";
+
 
 .container-cards{
   .cards{
@@ -69,7 +72,32 @@ export default {
   
   .col{
     flex:50%;
+    .date{
+      color:$silver;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding:10px;
+    }
+    .title{
+      font-size:16px;
+      font-weight: bolder;
+      text-transform: capitalize;
+      padding:10px;
+    }
+
+    .location{
+      color:$silver;
+      text-transform: capitalize;
+      font-weight: 500;
+      padding: 10px;
+    }
   }
+
+  
 }
+
+.margin{
+    margin-left: 280px;
+  }
 
 </style>
