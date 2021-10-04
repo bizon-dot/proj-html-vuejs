@@ -10,26 +10,29 @@
     </div>
      <div class="container-cards">
         <ul class="cards">
-          <li v-for="(event,index) in events" :key="index">
-            <!-- <div v-bind:class="{ active: isActive }"></div> -->
-            <div class="row" :class="(index > 1) ? 'margin' : 'null' " >
+          <li v-for="(event,index) in events" 
+          :key="index">
+            <!-- Applico la classe in maniera condizionale -->
+            <div class="row" 
+            :class="(index > 1) ? 'margin' : 'null' " >
               <div class="col img">
                    <img class="img-fluid mb-3" :src="require(`@/${event.path}`)" :alt="event.title">
               </div>
                <div class="col">
-                 <p class="date"> {{event.date}} </p>
-                 <p class="title"> {{event.title}} </p>
-                 <p class="location"><i class="fas fa-map-marker-alt"></i> {{event.location}} </p>
-              </div>
-              
-           
+                 <p class="date"> 
+                   {{event.date}} 
+                  </p>
+                 <p class="title"> 
+                   {{event.title}} 
+                  </p>
+                 <p class="location">
+                   <i class="fas fa-map-marker-alt"></i> {{event.location}} 
+                 </p>
+              </div>         
             </div>
           </li>
-
         </ul>
-
-      </div>
-    
+      </div>  
   </div>
 </template>
 

@@ -9,6 +9,8 @@
     <Events /> 
     <Blog />
     <CallToActions />
+    <ContactMe />
+
 
 
      <Footer />
@@ -25,7 +27,7 @@ import Courses from './components/Courses.vue';
 import Blog from './components/Blog.vue';
 
 import Events from './components/Events.vue';
-
+import ContactMe from './components/ContactMe.vue'
 import Footer from './components/Footer.vue';
 
 
@@ -40,6 +42,7 @@ export default {
     Courses,
     Blog,
     Events,
+    ContactMe,
     Footer
   }
 }

@@ -13,7 +13,7 @@ const events = [
     },
     {
         date:"dec 15, 2020",
-        title:"street performance:call for artist",
+        title:"street performance: call for artist",
         location:"Illinois, US",
         path:"assets/img/artist-event-04-250x300.jpg",
     },

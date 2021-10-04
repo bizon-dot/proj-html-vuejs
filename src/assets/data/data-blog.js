@@ -1,6 +1,6 @@
 const posts = [
     {
-        title:" Bushes strokes Energize Trees in Paintings",
+        title:"bushes strokes energize trees in paintings",
         category: " artist",
         date: "May 15,2020",
         views:668,
