@@ -14,7 +14,7 @@
       <ul class="cards">
         <li v-for="(post,index) in posts" 
             :key="index">
-          <!-- <div class="card" v-if="!(index==1)"> -->
+          
            <div class="card" v-if="!(index==1)">
             <div class="box-image">
                 <img class="img-fluid mb-3" :src="require(`@/${post.path}`)" :alt="post.title">
@@ -52,9 +52,6 @@
       <span>Get into details now? </span><a> View all posts <i class="fas fa-arrow-right"></i></a>
 
     </div>
-
-
-
   </div>
 </div>
 </template>

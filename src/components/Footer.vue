@@ -16,7 +16,6 @@
 
     </div>
 
-
     <div class="linksExplore">
       <h2>Explore</h2>
       <ul class="items">
@@ -24,11 +23,8 @@
           <a> {{link.text}} </a>
         </li>
       </ul>
-
     </div>
-
     <div class="linksInformation">
-
       <h2>Information</h2>
       <ul class="items">
         <li v-for="(link,index) in linksInformation" :key="index">
@@ -54,8 +50,7 @@
 
 
   </div>
-
-
+     <!-- Footer Bottom  -->
      <div class="footer-bottom">
        <i class="far fa-copyright"></i> {{currentYear}} Maxcoach. All Right Reserved
   </div>
@@ -98,6 +93,7 @@
 
   .footer{
     color: $dusty-gray;
+    padding: em(20);
   }
 
   .footer-top {
@@ -118,12 +114,7 @@
       }
     }
 
-    .socialItems{
-      font-size: 20px;
-      :hover{
-        color:black;
-      }
-    }
+   
     
     .socialItems,
     .container-photos {

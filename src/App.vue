@@ -10,10 +10,11 @@
     <Blog />
     <CallToActions />
     <ContactMe />
+    <Footer />
+    <GoToTop />
+      
 
-
-
-     <Footer />
+     
   </div>
 </template>
 
@@ -29,6 +30,7 @@ import Blog from './components/Blog.vue';
 import Events from './components/Events.vue';
 import ContactMe from './components/ContactMe.vue'
 import Footer from './components/Footer.vue';
+import GoToTop from './components/GoToTop.vue';
 
 
 export default {
@@ -43,8 +45,10 @@ export default {
     Blog,
     Events,
     ContactMe,
-    Footer
-  }
+    Footer,
+    GoToTop
+  },
+  
 }
 </script>
 
@@ -52,6 +56,7 @@ export default {
   @import "./style/general.scss";
 
 #app {
+  
 
   
   

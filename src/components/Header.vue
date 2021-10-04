@@ -1,5 +1,27 @@
+/**   
+
+      *   Importo link.nav.js con i dati necessari a creare una nav dinamica
+
+          Ex struttura: 
+            {
+                text: "Home",
+                url: "#",
+            }
+      **  Importo social icons con le classi FontAwesome per generare le icone social 
+
+          Ex struttura: 
+
+            {
+                text: 'facebook-logo',
+                path: 'assets/img/facebook.svg',
+                ico: 'fab fa-facebook-f'
+            }
+
+      *** CSS: struttura creata usando flex 
+*/
 <template>
-  <header cclass="container">
+  <header class="container">
+    <!-- Header top PROMO + TIMER  -->
     <div class="header-top">
       <label class="msg-timer">
         Starts TOMORROW! Our biggest event of the year
@@ -9,31 +31,28 @@
       </label>
       <button class="button bg-orange">Get ticket</button>
     </div>
-
+    <!-- Header bottom LOGO + MENU + SOCIAL -->
     <div class="header-bottom">
-
       <div class="logo">
         <img src="../assets/img/dark-logo.png">
       </div>
+      <!-- Nav -->
       <div class="menu">
         <ul class="items">
           <li v-for="(link,index) in links" :key="index">
             <a> {{link.text.toUpperCase()}} </a>
           </li>
         </ul>
-
       </div>
+      <!-- Social Link -->
       <div class="socials">
-        <ul class="items">
+        <ul class="items socialItems">
           <li v-for="(icon,index) in socialIcons" :key="index">
-            <img :src="require(`@/${icon.path}`)" :alt="icon.text" />
+              <i :class="icon.ico"></i>
           </li>
         </ul>
-
       </div>
-
     </div>
-
   </header>
 </template>
 
@@ -68,7 +87,7 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
-    gap: 20px;
+    gap: em(20);
 
     .msg-timer {
       color: $dusty-gray;
@@ -103,7 +122,7 @@
         list-style: none;
         display: flex;
         justify-content: space-between;
-
+        color: $silver;
         li {
           padding: 0px 0.625em;
         }

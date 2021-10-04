@@ -82,8 +82,6 @@
 
   }
 
-  
-
   .testimonials {
        background-image: url("../assets/img/artist-shape-01-600x577.png");
        

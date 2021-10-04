@@ -3,6 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
 
 //Reset 
 
@@ -108,4 +111,14 @@
 
   }
 
+}
+
+
+// Icone social 
+
+.socialItems{
+  font-size: em(20);
+  :hover{
+    color:black;
+  }
 }
