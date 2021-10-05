@@ -4,11 +4,11 @@
     <Header/>
     <!-- <Hero /> -->
     <ServiceCoaching />
+    <CallToActions />
     <Testimonials />
     <Courses />
     <Events /> 
     <Blog />
-    <CallToActions />
     <ContactMe />
     <Footer />
     <GoToTop />
@@ -26,7 +26,6 @@ import CallToActions from './components/CallToActions.vue';
 import Testimonials from './components/Testimonials.vue';
 import Courses from './components/Courses.vue';
 import Blog from './components/Blog.vue';
-
 import Events from './components/Events.vue';
 import ContactMe from './components/ContactMe.vue'
 import Footer from './components/Footer.vue';

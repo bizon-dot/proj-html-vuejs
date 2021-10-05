@@ -77,6 +77,7 @@
 
   .blog{
     background-image: url("../assets/img/maxcoach-shape-14-1536x343.png");
+    margin-bottom: 70px;
   }
 
   .cards {
