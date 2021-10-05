@@ -1,6 +1,5 @@
 @import './var.scss';
 @import './mixin.scss';
-
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
 html {
@@ -76,7 +75,7 @@ html {
 }
 
 button:hover{
-  background-color: $bay-of-many;
+  background-color: lighten($bay-of-many, 10%);
   color:white;
 }
 
