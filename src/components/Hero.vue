@@ -16,10 +16,6 @@
       <img src="../assets/img/artist-hero-image-02-232x300.jpg" class="t-r"/>
       <img src="../assets/img/artist-hero-image-03-204x300.png" class="b-r"/>
       <img src="../assets/img/artist-shape-03-201x300.png" class="h-80"/>
-
-
-
-
     </div>
     
     <div class="right">
@@ -37,9 +33,6 @@
 <script>
 export default {
   name: 'Hero',
-  props: {
-    msg: String
-  }
 }
 </script>
 
@@ -61,8 +54,8 @@ export default {
         
 
         button{
-          height: 50px;
-          width:150px;
+          height:em(50);
+          width:em(50);
         }
         
         .handwriting{
@@ -74,6 +67,7 @@ export default {
           padding:10px;
         }
       }
+      // Posizionamento immagini
 
       .h-90{
         height: 90%;
