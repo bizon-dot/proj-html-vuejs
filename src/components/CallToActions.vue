@@ -47,7 +47,7 @@
 
   .row {
     display: flex;
-    margin-bottom: em(40);
+    margin-bottom: em(60);
     min-height: em(40);   
   }
 
@@ -63,7 +63,7 @@
     }
 
     .handwriting{
-      font-size:em(30)x;
+      font-size:em(30);
     }
 
     .justify{
