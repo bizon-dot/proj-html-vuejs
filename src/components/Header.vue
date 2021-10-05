@@ -20,7 +20,7 @@
       *** CSS: struttura creata usando flex 
 */
 <template>
-  <header class="container">
+  <header >
     <!-- Header top PROMO + TIMER  -->
     <div class="header-top">
       <label class="msg-timer">

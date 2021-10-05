@@ -2,7 +2,7 @@
   <div id="app" >
    
     <Header/>
-    <!-- <Hero /> -->
+    <Hero />
     <ServiceCoaching />
     <CallToActions />
     <Testimonials />
@@ -20,7 +20,7 @@
 
 <script>
 import Header from './components/Header.vue';
-// import Hero from './components/Hero.vue';
+import Hero from './components/Hero.vue';
 import ServiceCoaching from './components/ServiceCoaching.vue';
 import CallToActions from './components/CallToActions.vue';
 import Testimonials from './components/Testimonials.vue';
@@ -36,7 +36,7 @@ export default {
   name: 'App',
   components: {
     Header,
- /*    Hero, */
+    Hero, 
     ServiceCoaching,
     CallToActions,
     Testimonials,
